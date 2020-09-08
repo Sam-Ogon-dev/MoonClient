@@ -1,0 +1,58 @@
+.button {
+  font-family: "Moon Font 2", serif;
+  cursor: pointer;
+  border-radius: 0;
+  border: none;
+  outline: none;
+  transition: 100ms;
+  background-color: #e7e7e7;
+  &:hover {
+    transition: 100ms;
+    color: #e8e8e8;
+    background: rgba(92, 105, 154, 0.84);
+  }
+}
+
+hr {
+  border: none;
+  background: radial-gradient(rgba(57, 57, 57, 0.84) 45%, rgba(0, 0, 0, 0) 65%);
+  width: 100%;
+  height: 1px;
+}
+
+textarea {
+  font-family: "Moon Font 2", serif;
+  background: rgba(234, 234, 234, 0.76);
+  padding: 5px;
+  resize: none;
+  border: none;
+  outline: none;
+  transition: 300ms;
+  &:focus {
+    height: 100px;
+    transition: 300ms;
+  }
+}
+
+.avatar {
+  border-radius: 30px;
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.error {
+  border: 1px solid rgba(7,7,7,0.8);
+  box-shadow: 0 0 3px 2px rgba(255, 0, 0, 0.93);
+}
+
+.error_notification {
+  color: rgba(255, 0, 0, 0.93);
+  font-size: 13px;
+}
+
+.loader {
+  width: 500px;
+  height: 100px;
+  background-color: #1a1a1a;
+}

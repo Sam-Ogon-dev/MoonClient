@@ -1,0 +1,193 @@
+.news-feed {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  backdrop-filter: blur(3px);
+}
+
+.post {
+  font-family: "Moon Font 2", serif;
+  font-size: 14px;
+  overflow: hidden;
+  width: 50%;
+  height: fit-content;
+  border-radius: 2px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.post-text {
+  color: #1a1a1a;
+  background: rgba(219, 219, 219, 0.89);
+  padding: 10px;
+}
+
+.slider {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: fit-content;
+  width: 100%;
+  background-color: rgba(147, 147, 147, 0.32);
+
+  .slide {
+    position: relative;
+    overflow: hidden;
+    width: 500px;
+    height: 40vh;
+  }
+
+  img {
+    position: absolute;
+    height: 100%;
+    width: 500px;
+    object-fit: contain;
+  }
+
+  .current_slide {
+    left: 0;
+  }
+
+  .other_slide {
+    left: 500px;
+  }
+
+  .slide-back-btn {
+    cursor: pointer;
+    width: 6%;
+    background: url("../assets/arrow_left.png") no-repeat center;
+    background-size: contain;
+    &:hover {
+      background-color: rgba(147, 147, 147, 0.55);
+    }
+  }
+
+  .slide-next-btn {
+    cursor: pointer;
+    width: 6%;
+    background: url("../assets/arrow_right.png") no-repeat center;
+    background-size: contain;
+    &:hover {
+      background-color: rgba(147, 147, 147, 0.55);
+    }
+  }
+}
+
+.top_panel {
+  background: rgba(139,139,139,0.71);
+  font-family: "Moon Font 2", serif;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.edit_button {
+  cursor: pointer;
+  align-items: center;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  background: rgba(255, 167, 87, 0.48);
+  transition: 300ms;
+
+  &:hover {
+    transition: 300ms;
+    background: rgba(255, 167, 87, 0.91);
+  }
+}
+
+.delete_button {
+  cursor: pointer;
+  align-items: center;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  background: rgba(255, 58, 58, 0.48);
+  transition: 300ms;
+
+  &:hover {
+    transition: 300ms;
+    background: rgba(255, 58, 58, 0.91);
+  }
+}
+
+.likes_button {
+  cursor: pointer;
+  align-items: center;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  background: rgba(219, 219, 219, 0.48);
+  img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    filter: grayscale(1) brightness(140%);
+  }
+}
+
+.active_likes {
+  img {
+    filter: none!important;
+  }
+}
+
+.author {
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  align-items: center;
+  padding: 10px;
+  background: rgba(219, 219, 219, 0.74);
+
+  div {
+    margin: 10px;
+  }
+}
+
+.comments {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  font-family: "Moon Font 2", serif;
+  color: #1a1a1a;
+  background: rgba(167, 167, 167, 0.76);
+  padding: 10px;
+}
+
+.comment {
+  align-items: center;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.comment-text {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.newCommentArea {
+  display: flex;
+  flex-direction: row;
+
+  textarea {
+    width: 90%;
+    height: 50px;
+  }
+
+  .button {
+    width: 10%;
+    height: 50px;
+  }
+}
